@@ -5,7 +5,7 @@ Download the source code and run it on Android Studio. Wait for 3-4 seconds befo
 # Description
 The app has two parts: one showing the current game updates and previous match scores.
 
-The first part displays all details like stadium, status (time, half-time or full time), weather, date, scores, and events which occured during that match. The following is an example:
+The first part displays all details like stage, status (time, half-time or full time), weather, date, scores, and events which occured during that match. The following is an example:
 
 ![Screenshot](s1.jpg)
 
