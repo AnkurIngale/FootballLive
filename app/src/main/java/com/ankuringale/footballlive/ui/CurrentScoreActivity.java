@@ -124,7 +124,7 @@ public class CurrentScoreActivity extends AppCompatActivity {
                             else c++;
 
 
-                                Log.v(TAG, "LOda hai ye nhi chalega");
+                                Log.v(TAG, "Not working");
 
 
                             runOnUiThread(new Runnable() {
@@ -180,20 +180,20 @@ public class CurrentScoreActivity extends AppCompatActivity {
     public void nextActivity(View view)
     {
 
-        List<Current> lista = matches.getPrevious();
+        List<Current> lists = matches.getPrevious();
 
-        if(lista == null)
+        if(lists == null)
         {
             //alertError();
             return;
         }
 
         Log.v(TAG , getResources().getString(R.string.clara));
-        Log.v(TAG,lista.get(0).getTeam1Code());
+        Log.v(TAG,lists.get(0).getTeam1Code());
         Intent intent = new Intent(this,PreviousMatchActivity.class);
         Bundle bundle = new Bundle();
-        for (int i = 0; i<lista.size(); i++)
-            bundle.putSerializable("extras"+i, lista.get(i));
+        for (int i = 0; i<lists.size(); i++)
+            bundle.putSerializable("extras"+i, lists.get(i));
 
         intent.putExtras(bundle);
         startActivity(intent);

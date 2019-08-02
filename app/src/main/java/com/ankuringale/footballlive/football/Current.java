@@ -331,6 +331,8 @@ public class Current implements Serializable {
         {
             case "goal-own":
                 return "O GOAL";
+            case "goal-penalty":
+                return "PENALTY";
             case "goal":
                 return "GOAL";
             case "yellow-card":
