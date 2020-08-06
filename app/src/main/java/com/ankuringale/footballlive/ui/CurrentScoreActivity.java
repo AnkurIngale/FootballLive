@@ -37,7 +37,6 @@ import okhttp3.Response;
 public class CurrentScoreActivity extends AppCompatActivity {
 
     private boolean doublePressedOnce = false;
-    private int c =0;
     private static  final String TAG = CurrentScoreActivity.class.getSimpleName();
     private Current current;
     private Matches matches;
@@ -119,9 +118,7 @@ public class CurrentScoreActivity extends AppCompatActivity {
                         if (response.isSuccessful()) {
                             matches.getJSON(jsonData);
                             current = matches.returnCurrentMatch();
-                            if(c!=2)
                             matches.setPreviousMatches();
-                            else c++;
 
 
                                 Log.v(TAG, "Not working");
